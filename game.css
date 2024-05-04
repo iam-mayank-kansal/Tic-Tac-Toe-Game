@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 75px auto;
+}
+
+.user-notify {
+    display: flex;
+    border: 2px solid black;
+    text-align: center;
+    width: 300px;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding: 7px;
+}
+
+.users {
+    border: 2px solid white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 37px;
+    gap: 10px;
+    transition: .2s;
+
+}
+
+.boxes {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    user-select: none;
+    transition: .2s;
+}
+
+.pop-up {
+    height: 550px;
+    width: 550px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: radial-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(https://img.freepik.com/free-vector/golden-frame-ribbon-background-with-text-space_1017-26380.jpg?size=626&ext=jpg&ga=GA1.1.1676910218.1702108275&semt=sph);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
+
+.starting {
+    height: 550px;
+    width: 550px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: .3s;
+    background-color: white;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/free-vector/hands-holding-pencils-play-tic-tac-toe-people-drawing-crosses-noughts-simple-game-children-flat-vector-illustration-strategy-concept-banner-website-design-landing-web-page_74855-24786.jpg?uid=R126065187&ga=GA1.1.1676910218.1702108275&semt=ais);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.starting h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.starting input {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.starting button {
+    width: 200px;
+    margin: 50px auto;
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: .5s;
+    border-radius: 10px;
+    font-size: 30px;
+
+}
+
+.pop-up p:nth-child(1) {
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 120px;
+    width: 330px;
+    font-size: 40px;
+}
+
+.pop-up p:nth-child(2) {
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 20px;
+    font-size: 40px;
+    width: 330px;
+
+}
+
+.pop-up button {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    font-size: 30px;
+    border: none;
+    margin-top: 170px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+}
